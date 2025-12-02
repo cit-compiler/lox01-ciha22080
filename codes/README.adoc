@@ -1,4 +1,3 @@
-
 :linkcss:
 :stylesdir: css
 :stylesheet: mystyle.css
@@ -15,14 +14,150 @@
 :sourcesdir: codes
 :icons: font
 :hide-uri-scheme!:
-:figure-caption: å›³
-:example-caption: ãƒªã‚¹ãƒˆ
-:table-caption: è¡¨
-:appendix-caption: ä»˜éŒ²
+:figure-caption: }
+:example-caption: ƒŠƒXƒg
+:table-caption: •\
+:appendix-caption: •t˜^
 :xrefstyle: short
 :section-refsig:
 :chapter-refsig:
 
-= codes
+= lox01
 
-ã“ã“ã«æ¼”ç¿’ç”¨ã®ã‚³ãƒ¼ãƒ‰ã‚’ä½œæˆã—ã¾ã™ã€‚
+[.lead]
+Java”ÅLox‚ğì‚é‚½‚ß‚Ì‰‰K—pƒŠƒ|ƒWƒgƒŠ‚Å‚·B
+
+== ƒfƒBƒŒƒNƒgƒŠ‚ğŠm”F‚·‚é
+
+‚±‚ÌAssignment‚ğClone‚µ‚½‚çAŸ‚Ì‚±‚Æ‚ğŠm”F‚µ‚È‚³‚¢B
+
+- [x] codes ƒfƒBƒŒƒNƒgƒŠ‚ª‚ ‚é‚±‚Æ‚ğŠm”F‚·‚éB
+- [x] css ƒfƒBƒŒƒNƒgƒŠ‚ª‚ ‚é‚±‚Æ‚ğŠm”F‚·‚éB
+- [x] images ƒfƒBƒŒƒNƒgƒŠ‚ª‚ ‚é‚±‚Æ‚ğŠm”F‚·‚éB
+
+ã‹LƒfƒBƒŒƒNƒgƒŠ‚ªŠm”F‚Å‚«‚½‚çAƒeƒLƒXƒgƒGƒfƒBƒ^‚ÅREADME.adoc ‚ğ•ÒW‚µ‚Ü‚·B
+
+[source, asciidoctor]
+----
+// Šm”Fƒ`ƒFƒbƒN‘O‚ÌƒeƒLƒXƒg
+- [ ] codes ƒfƒBƒŒƒNƒgƒŠ‚ª‚ ‚é‚±‚Æ‚ğŠm”F‚·‚éB
+
+// Šm”Fƒ`ƒFƒbƒNŒã‚ÌƒeƒLƒXƒg
+- [x] codes ƒfƒBƒŒƒNƒgƒŠ‚ª‚ ‚é‚±‚Æ‚ğŠm”F‚·‚éB
+----
+
+‚±‚±‚Åˆê“xƒRƒ~ƒbƒg‚µ‚ÄAì‹Æ—š—ğ‚ğc‚µ‚Ä‚¨‚±‚¤B
+
+[source, console]
+----
+$ cd (Assingment‚Ìƒ‹[ƒgƒfƒBƒŒƒNƒgƒŠ) # <1>
+$ git status # (2)
+
+
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+ modified:   README.adoc
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+$ git add README.adoc # <3>
+io—Í—ªj
+$ git status # <4>
+io—Í—ªj
+$ git commit -m "check codes directory and so on." # <5>
+
+----
+<1> Œ»İ‚ÌƒfƒBƒŒƒNƒgƒŠ‚ª‚±‚ÌAssignment‚Ìƒ‹[ƒgƒfƒBƒŒƒNƒgƒŠ‚Å‚È‚¢ê‡‚ÍAˆÚ“®‚·‚éB
+<2> README.adoc ‚ªXV‚³‚ê‚Ä‚¢‚é‚±‚Æ‚ğŠm”F‚µ‚½B
+<3> README.adoc ‚ğXV‘ÎÛ‚Æ‚µ‚ÄƒXƒe[ƒW‚É’Ç‰Á‚µ‚½B
+<4> README.adoc ‚ğXV‘ÎÛ‚Æ‚µ‚ÄƒXƒe[ƒW‚É’Ç‰Á‚Å‚«‚Ä‚¢‚é‚©Šm”F‚·‚éB
+<5> Git ‚Ì commit ƒRƒ}ƒ“ƒh‚ğÀs‚µ‚ÄAì‹Æ—š—ğ‚ğƒRƒ~ƒbƒg‚µ‚½B
+
+Git‚ÌƒRƒ~ƒbƒgƒRƒ}ƒ“ƒh‚Ìg‚¢•û‚ÍABox‚É’u‚¢‚Ä‚ ‚é github-git-cheat-sheet.pdf ‚ğQÆ‚µ‚Ü‚µ‚å‚¤B
+
+
+== ‰‰K—pƒfƒBƒŒƒNƒgƒŠ‚ğì¬‚·‚é
+
+Ÿ‚Ìè‡‚ÅA‰‰KƒvƒƒOƒ‰ƒ€‚Ìƒ\[ƒXƒR[ƒh‚ğ’u‚­ƒfƒBƒŒƒNƒgƒŠi codes ƒfƒBƒŒƒNƒgƒŠj‚ÉA com/craftinginterpreters/lox ƒfƒBƒŒƒNƒgƒŠŠK‘w‚ğì¬‚µ‚Ü‚·B
+
+. ©•ª‚ªŠJ”­‚Ég‚¤ƒ^[ƒ~ƒiƒ‹‚Å codes ƒfƒBƒŒƒNƒgƒŠ‚ğŠJ‚­i‚Ü‚½‚ÍŒ»İ‚ÌƒfƒBƒŒƒNƒgƒŠ‚ğ‚»‚±‚ÉˆÚ“®‚·‚éjB
+. iJava‚È‚Ì‚ÅjƒpƒbƒP[ƒW\‘¢‚É‡‚í‚¹‚ÄƒfƒBƒŒƒNƒgƒŠŠK‘w‚ğì¬‚·‚éB +
+[source,console]
+----
+$ pwd # <1>
+iLox01‚ğclone‚µ‚½ƒfƒBƒŒƒNƒgƒŠ‚Ìj/lox01/codes
+$ mkdir com
+$ mkdir com/craftinginterpreters # <2>
+$ mkdir com/craftinginterpreters/lox # <2>
+----
+<1> pwd ƒRƒ}ƒ“ƒh‚ğg‚Á‚ÄAŒ»İ‚ÌƒfƒBƒŒƒNƒgƒŠ‚ª codes ƒfƒBƒŒƒNƒgƒŠ‚Å‚ ‚é‚±‚Æ‚ğŠm”F‚µ‚½B
+<2> ƒpƒbƒP[ƒWŠK‘w‚É‡‚í‚¹‚ÄAƒfƒBƒŒƒNƒgƒŠ‚ğì¬‚µ‚½B
+
+NOTE: ƒfƒBƒŒƒNƒgƒŠ‹æØ‚è•¶š‚ÍAƒRƒ}ƒ“ƒhƒvƒƒ“ƒvƒg‚Å‚ÍƒXƒ‰ƒbƒVƒ… `/` ‚Å‚Í‚È‚­ƒoƒbƒNƒXƒ‰ƒbƒVƒ… `\` ‚ ‚é‚¢‚Í“ú–{ŒêƒtƒHƒ“ƒg‚¾‚Æ”¼Šp‚Ìƒ}[ƒN‚É‚È‚éB
+
+[NOTE]
+--
+‚Æ‚«‚ÉAƒ^[ƒ~ƒiƒ‹‚©‚çƒfƒBƒŒƒNƒgƒŠ‚ğì‚ë‚¤‚Æ‚µ‚Ä‚àuŒ ŒÀ‚ª‚È‚­‚Äì‚ê‚È‚¢v‚ÆŒ¾‚í‚ê‚é‚±‚Æ‚ª‚ ‚éB
+‚»‚Ì‚æ‚¤‚Èê‡‚ÍAWindows ƒGƒNƒXƒvƒ[ƒ‰[‚ğg‚Á‚ÄƒtƒHƒ‹ƒ_‚Æ‚µ‚Äì¬‚·‚éB
+--
+
+== ‰‰KƒR[ƒh‚ğì¬‚·‚é
+
+. ƒeƒLƒXƒgƒGƒfƒBƒ^‚ÅAã‹L‚Åì¬‚µ‚½ com/craftinginterpreters/lox ƒfƒBƒŒƒNƒgƒŠ‚É Lox.java ‚ğì¬‚·‚éB
+** VS Code‚È‚çAuƒtƒHƒ‹ƒ_[‚ğŠJ‚­v‚ÅA com/craftinginterpreters/lox ƒfƒBƒŒƒNƒgƒŠ‚ğŠJ‚¢‚Ä‚¨‚­‚Æ‚æ‚¢‚¾‚ë‚¤B
+. ƒeƒLƒXƒg‚Ìu4.1v‚ğQÆ‚µ‚ÄAÅ‰‚ÌƒvƒƒOƒ‰ƒ€‚ğÀ‘•‚·‚éB
+. ì¬‚µ‚½‚çAÀs‚µ‚Ä‚İ‚éi‚Ü‚¾‚È‚É‚©‚Å‚«‚é‚í‚¯‚Å‚Í‚È‚¢‚¯‚Çj
+** ƒRƒ“ƒpƒCƒ‹ƒGƒ‰[‚ª‚ ‚ê‚ÎAæ‚èœ‚¢‚Ä‚¨‚­B
+
+== •ÏX‚ğƒRƒ~ƒbƒgicommitj‚·‚é
+
+Git‚Ì commit ƒRƒ}ƒ“ƒh‚ğg‚Á‚ÄAì¬ì‹Æ‚ğAƒŠƒ|ƒWƒgƒŠ‚É‹L˜^‚µ‚Ä‚¨‚­B
+
+[source,console]
+----
+$ git status # <1>
+io—Í—ªj
+$ git add Lox.java # <2>
+$ git status # <3>
+$ git commit -m "first ver. of Lox class."
+
+----
+<1> •ÏX“_‚ğŠm”F‚·‚éBì¬‚µ‚½ƒtƒ@ƒCƒ‹‚ªƒXƒe[ƒW‚É‚È‚¢‚±‚Æ‚ª‚í‚©‚Á‚½B
+<2> •ÏX‘ÎÛƒtƒ@ƒCƒ‹i‚¨‚»‚ç‚­ Lox.java j‚ğAƒXƒe[ƒW‚É’Ç‰Á‚µ‚½B
+<3> ‚à‚¤ˆê“xStatus‚ğŠm”F‚µ‚ÄAƒXƒe[ƒW‚É’Ç‰Á‚Å‚«‚Ä‚¢‚é‚±‚Æ‚ğŠm”F‚µ‚½B
+<4> ƒRƒ~ƒbƒg‚µ‚½B
+
+
+WARNING: ƒRƒ~ƒbƒg‚ÍAƒtƒ@ƒCƒ‹‚Å‚Í‚È‚­AƒŠƒ|ƒWƒgƒŠ‚É‘Î‚µ‚ÄÀs‚·‚é‚±‚Æ‚É’ˆÓiŒ»İ‚ÌƒfƒBƒŒƒNƒgƒŠ‚¾‚¯‚Å‚È‚­AƒŠƒ|ƒWƒgƒŠ‘S‘Ì‚ªˆ—‚Ì‘ÎÛ‚É‚È‚éjB
+
+IMPORTANT: git‚ÅƒRƒ~ƒbƒg‚·‚é‚Æ‚«‚É‹N“®‚³‚ê‚éƒGƒfƒBƒ^‚ÍA git for Windoes‚ÌƒCƒ“ƒXƒg[ƒ‹‚Éw’è‚µ‚½ƒGƒfƒBƒ^‚©A–¢İ’è‚È‚ç vim ‚Æ‚¢‚¤Unix—R—ˆ‚ÌƒGƒfƒBƒ^Bg‚¢•û‚ğŠo‚¦‚é‚©Agit‚©‚ç‹N“®‚³‚ê‚éƒGƒfƒBƒ^‚Ìİ’è‚ğ VS Code ‚È‚Ç©•ª‚ª‚Â‚©‚¤ƒGƒfƒBƒ^‚É•ÏX‚·‚éB
+
+== ƒRƒ~ƒbƒg‚ğƒvƒbƒVƒ…ipushj‚·‚é
+
+ƒRƒ~ƒbƒg‚µ‚½’iŠK‚Å‚ÍA‚Ü‚¾ƒ[ƒJƒ‹i©•ª‚ÌPCj‚ÌƒŠƒ|ƒWƒgƒŠ‚ÉXVî•ñ‚ª”½‰f‚³‚ê‚½’iŠK‚ÅA‚Ü‚¾AGitHubã‚Ì‚İ‚È‚³‚ñ‚ÌƒŠƒ|ƒWƒgƒŠ‚É‚Í”½‰f‚³‚ê‚Ä‚¢‚Ü‚¹‚ñB
+
+‚»‚±‚ÅA‚±‚±‚Ü‚Å‚Ìì‹ÆŒ‹‰Ê‚ğ”½‰f‚·‚é‚½‚ß‚ÉAƒvƒbƒVƒ…‚µ‚Ü‚·B
+
+[source,console]
+----
+$ git status # <1>
+
+On branch main
+Your branch is ahead of 'origin/main' by 1 commit.
+  (use "git push" to publish your local commits)
+
+nothing to commit, working tree clean
+
+$ git push # <2>
+----
+<1> ƒRƒ~ƒbƒg‚ªŠ®—¹‚Å‚«‚Ä‚¢‚é‚©Šm”F‚·‚éi‚Ü‚¾‚È‚çAæ‚ÉƒRƒ~ƒbƒg‚·‚éjB
+<2> ƒvƒbƒVƒ…‚ğÀs‚µ‚½BGitHubãiƒŠƒ‚[ƒg‚ÌjƒŠƒ|ƒWƒgƒŠ‚Æ‚ÌŠÔ‚ÉƒRƒ“ƒtƒŠƒNƒg‚ª‚È‚¯‚ê‚ÎAƒ[ƒJƒ‹‚Ì“à—e‚ªƒŠƒ‚[ƒg‚Ö”½‰f‚³‚ê‚éB
+
+* push‚ÌÛ‚ÉAƒ†[ƒU[–¼‚ğ‚«‚©‚ê‚½‚çAGitHubƒAƒJƒEƒ“ƒg–¼‚ğ“ü—Í‚·‚éB
+* ƒpƒXƒ[ƒh‚É‚ÍAì¬‚µ‚Ä‚¨‚¢‚½ƒp[ƒ\ƒiƒ‹ƒAƒNƒZƒXƒg[ƒNƒ“‚ğ“ü—Í‚·‚éigitƒAƒJƒEƒ“ƒg‚ÌƒpƒXƒ[ƒh‚Å‚Í‚È‚¢jB
+
+NOTE: ƒvƒbƒVƒ…‚Å‚ÍAƒ[ƒJƒ‹i©•ª‚ÌPCj‚É—­‚Ü‚Á‚½•¡”‚ÌƒRƒ~ƒbƒg‚ğAƒŠƒ‚[ƒgiGitHub‚ÌƒT[ƒo[j‚Ö“]‘—‚µAƒŠƒ‚[ƒg‚ÌƒŠƒ|ƒWƒgƒŠ‚ğXV‚·‚éBÅŒã‚ÉƒvƒbƒVƒ…‚µ‚ÄˆÈ~‚ÌƒRƒ~ƒbƒg‚ª‚Ü‚Æ‚ß‚Ä‘—‚èo‚³‚ê‚é‚Ì‚ÅA•K‚¸‚µ‚àƒRƒ~ƒbƒg‚²‚ÉƒvƒbƒVƒ…‚·‚é•K—v‚Í‚È‚¢B‚Ü‚ß‚ÉƒRƒ~ƒbƒg‚µA“®ìŠm”F“™‚ğÀ{‚µ‚Äˆê’i—‚µ‚½‚çƒvƒbƒVƒ…‚·‚é‚Ì‚ª‚æ‚¢‚¾‚ë‚¤B
